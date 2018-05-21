@@ -22,13 +22,13 @@ void MasaKur::on_comboBox_currentTextChanged(const QString &arg1)
 {
     QString masaustu = ui->comboBox->currentText();
 
-    QFile file("/opt/masakur/bilgi/"+masaustu);
+    QFile file("/usr/share/masakur/bilgi/"+masaustu);
     file.open(QFile::ReadOnly | QFile::Text);
 
     QTextStream ReadFile(&file);
     ui->MasaBilgi->setText(ReadFile.readAll());
 
-    ui->Resim->setPixmap("/opt/masakur/resimler/" + ui->comboBox->currentText() + ".png");
+    ui->Resim->setPixmap("/usr/share/masakur/resimler/" + ui->comboBox->currentText() + ".png");
 
 }
 
@@ -36,7 +36,7 @@ void MasaKur::on_MasaKurButonu_clicked()
 {
     QString masaustu = ui->comboBox->currentText();
 
-    QFile kur("/opt/masakur/kur/"+masaustu);
+    QFile kur("/usr/share/masakur/kur/"+masaustu);
     kur.open(QFile::ReadOnly | QFile::Text);
 
     QTextStream ReadFile(&kur);
