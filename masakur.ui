@@ -27,7 +27,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../opt/masakur/resimler/               Kurmak İstediğiniz Masaüstünü Seçiniz.png</pixmap>
+     <pixmap>/usr/share/masakur/resimler/               Kurmak İstediğiniz Masaüstünü Seçiniz.png</pixmap>
     </property>
    </widget>
    <widget class="QTextBrowser" name="MasaBilgi">
